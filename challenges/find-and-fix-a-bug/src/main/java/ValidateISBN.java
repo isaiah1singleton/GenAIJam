@@ -30,7 +30,7 @@ public class ValidateISBN {
 				}
 			}
 			else {
-				total += isbn.charAt(i) * (SHORT_ISBN_LENGTH -i);
+				total += (isbn.charAt(i) - '0')* (SHORT_ISBN_LENGTH -i);
 			}
 		}
 
